@@ -1,0 +1,37 @@
+---
+output: pdf_document
+params:
+  text: "meta/text.txt"
+  pages: 10
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir=normalizePath('../'))
+knitr::opts_chunk$set(echo = FALSE, fig.height = 10, fig.width = 10, fig.align = 'center', fig.pos = 'H')
+```
+
+```{r}
+content <- read.csv(params$text, header=F, stringsAsFactors=F)[,1]
+content <- sub("(.*[ ,-])(.{10}.*)", "\\1\n\\2", content)
+for(i in 1:10) {
+  pattern <- paste(rep("\n.*",i), collapse="")
+  content <- sub(paste("(.*[ ,-])(.*.{10}",pattern,")", sep=""), "\\1\n\\2", content)
+}
+
+```
+
+
+```{r}
+for(i in 1:params$pages) {
+  plot(1:6, type="l", col="#ffffff", axes=F, ann=F)
+  for(j in 2:5) {
+    lines(c(j,j),c(1,6))
+    lines(c(1,6),c(j,j))
+  }
+  rect(1,1,6,6)
+  x <- rep(1:5 + 0.5, 5)
+  y <- sort(rep(1:5+0.5, 5))
+  text(x,y, sample(content,length(content)))
+}
+```
