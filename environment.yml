@@ -3,6 +3,4 @@ channels:
 - bioconda
 dependencies:
 - r-rmarkdown
-- r-kableextra
-- r-magrittr
 - snakemake
