@@ -1,25 +1,25 @@
-Does not work with bioinformatics
 Been in five or more continents
 Can roll their tongue
 Prefers savory snacks rather than sweet
 Owns a pet
-Currently has more than 3 cups on their desk
-Works with SNP data
-Works with modelling
+Prefers tea over coffee
+Speaks more than three languages
+Has seen northern lights (aurora borealis)
+Owns an instrument
+Currently wears non-black socks
 Works at UmU
 Works at GU
 Works at Chalmers
 Works at KI
 Works at KTH
+Works at Naturhistoriska Riksmuseet
+Works at LiU
+Works at SU
+Works at UU
+Works at Linnaeus University
+Is the bioinformatics go-to-person in their group
+Works partly in the wet lab
+Has spent >1 day installing a software
 Does research on cancer
 Works with the microbiome
-Works with fish
-Is the bioinformatics go-to-person in their group
-Prefers tea over coffee
-Knows how to ski
-Speaks more than three languages
-Works partly in the wet lab
-Has seen northern lights (aurora borealis)
-Has spent >1 day installing a software
-Owns an instrument
-Currently wears non-black socks
+Works with mammoths
